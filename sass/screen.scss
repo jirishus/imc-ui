@@ -1,0 +1,22 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+body, html {
+  background: url("../images/foods.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.main-nav {
+  background: #fff;
+  color: #333;
+  padding: 1em 0;
+}
+
+.container {
+  padding: 5em 0;
+}
+
