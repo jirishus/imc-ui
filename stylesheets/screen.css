@@ -26,10 +26,10 @@ a img { border: none; }
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
 
 /* line 8, ../sass/screen.scss */
-body, html { background: url("../images/foods.jpg") no-repeat center center; background-size: cover; }
+body, html { background-size: cover; }
 
 /* line 13, ../sass/screen.scss */
 .main-nav { background: #fff; color: #333; padding: 1em 0; }
 
 /* line 19, ../sass/screen.scss */
-.container { padding: 5em 0; }
+.container { padding: 100px 0; }
