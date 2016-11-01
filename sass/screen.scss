@@ -15,6 +15,13 @@ h6 { font-size: .75em; }
 body, html {
   // background: url("../images/foods.jpg") no-repeat center center;
   // background-size: cover;
+  // background-color: #1ca8dd;
+  // background: linear-gradient(to bottom, #137499, #1ca8dd) no-repeat;
+}
+
+.topbar {
+  border-bottom:2px solid #333;
+  padding: 20px 0;
 }
 
 .container {
@@ -31,3 +38,4 @@ body, html {
 .banner {
   padding:10px 0;
 }
+
