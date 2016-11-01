@@ -1,6 +1,3 @@
 (function() {
-
-  $('body').hide();
-  $('body').fadeIn(2000);
-
+  // custom scripts here
 })();
