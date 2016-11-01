@@ -28,9 +28,9 @@ h5 { font-size: .83em; }
 
 h6 { font-size: .75em; }
 
-.container { padding-bottom: 300px; }
+.container { padding-bottom: 100px; }
 
-.foods { padding: 100px 0; }
+.foods { padding: 20px 0; }
 .foods h2 { padding: 5px 0; }
 
-.banner { padding: 20px 0; }
+.banner { padding: 10px 0; }
