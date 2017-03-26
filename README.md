@@ -1,3 +1,3 @@
 ### Generic Lead Page
 
-# Early version of lead page
+**Early** version of lead page
