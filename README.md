@@ -1,1 +1,3 @@
-## Real-time grocery price checker
+### Generic Lead Page
+
+# Early version of lead page
