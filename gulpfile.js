@@ -27,5 +27,6 @@ gulp.task('default', ['localserver', 'browser-sync'], function() {
   console.log('default job');
   gulp.watch('sass/**/*.scss', ['styles']);
   gulp.watch('stylesheets/*.css', browserSync.reload);
+  gulp.watch('scripts/*.js', browserSync.reload);
   gulp.watch('index.html', browserSync.reload);
 });
