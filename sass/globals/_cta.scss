@@ -1,0 +1,49 @@
+.imc-hero {
+  text-align: center;
+  text-transform: uppercase;
+  h1 {
+    font-size: 3em;
+    span {
+      color: $lead-color;
+    }
+  }
+}
+
+.cta {
+  margin: 40px 0;
+  p {
+    margin: 20px 0;
+  }
+}
+
+.cta-content {
+  h2 {
+    text-transform: uppercase;
+    margin: 5px 0;
+  }
+  form {
+    background: $dark;
+    color: #fff;
+    padding: 40px 25px;
+  }
+  .download-btn {
+    background: $lead-color;
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    &:hover {
+      color: #fff;
+      background: rgba($lead-color, 0.7);
+    }
+  }
+}
+
+.cta-main-header {
+  color: $lead-color;
+}
+
+.cta-visual {
+  background: url('../images/book.png') no-repeat center center;
+  background-size: cover;
+  height: 503px;
+}
