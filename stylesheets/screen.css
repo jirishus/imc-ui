@@ -51,7 +51,7 @@ a:hover { cursor: pointer; text-decoration: none; }
 .imc-hero h1 span { color: #43C0F6; }
 
 .cta { margin: 40px 0; }
-.cta p { margin: 20px 0; }
+.cta p { line-height: 1.4; margin: 20px 0; }
 
 .cta-content h2 { text-transform: uppercase; margin: 5px 0; }
 .cta-content form { background: #333; color: #fff; padding: 40px 25px; }

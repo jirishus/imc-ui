@@ -40,25 +40,28 @@
       <p>
       Nulla turpis sit, phasellus hymenaeos turpis dolor, vulputate nostra erat quam ullamcorper, eros eu placerat lectus. Donec justo et velit odio amet, integer libero pede mollit wisi, in faucibus, non hymenaeos eget ultricies, est vel at mauris. Non arcu eu, vitae mi ipsum in tellus ut nec. Consequat leo elit etiam lacus nec, duis pulvinar vitae, labore ut natus volutpat vestibulum elit eu. Ipsum duis rutrum vitae consectetuer penatibus, congue arcu.
       </p>
-      <form name="imc-form">
+
+      <h2 id="download-text">Enjoy Your Download!</h2>
+
+      <form id="imc-form">
       
         <div class="form-group">
           <label for="firstName">First Name *</label>
-          <input type="text" class="form-control" id="firstName">
+          <input type="text" class="form-control" id="firstName" required>
         </div>
 
         <div class="form-group">
           <label for="lastName">Last Name *</label>
-          <input type="text" class="form-control" id="lastName">
+          <input type="text" class="form-control" id="lastName" required>
         </div>
 
         <div class="form-group">
           <label for="leadEmail">Email *</label>
-          <input type="email" class="form-control" id="leadEmail" required>
+          <input pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$" type="email" class="form-control" id="leadEmail" required>
         </div>
-        <button type="submit" class="btn download-btn">
-          <i class="fa fa-arrow-down"></i> Download Now
-        </button>
+        <!-- <input id="formSubmit" type="submit" class="btn download-btn" value="Download Now" />
+        <i class="fa fa-cog fa-spin"></i> -->
+        <button id="formSubmit" class="btn download-btn">Download Now <i class="fa fa-cog fa-spin" id="loader-icon"></i> </button>
       </form>
     </div>
     <div class="col-md-6 cta-visual">
