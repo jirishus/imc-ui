@@ -1,6 +1,5 @@
 .imc-hero {
   text-align: center;
-  text-transform: uppercase;
   margin: 20px 0;
   h1 {
     font-size: 3.5em;
@@ -22,20 +21,18 @@
 
 .cta-main-header {
   color: $lite;
-  text-transform: uppercase;
+  font-size: 1.8em;
 }
 
 .saving-list {
-  border-top: 1px solid $lite;
-  border-bottom: 1px solid $lite;
-  padding: 20px 20px;
-  margin: 40px 0;
+  background: rgba($dark, 0.5);
+  padding: 20px 40px;
+  margin: 20px 0;
   text-align: left;
   li {
     font-size: 1.6em;
     padding: 12px 0;
     list-style: disc;
-    text-transform: uppercase;
   }
 }
 
