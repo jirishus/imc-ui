@@ -1,18 +1,14 @@
 .imc-hero {
   text-align: center;
   text-transform: uppercase;
-  margin: 50px 0;
+  margin: 20px 0;
   h1 {
-    font-size: 3em;
-    span {
-      background: $lite;
-      color: $lead-color;
-    }
+    font-size: 3.5em;
   }
 }
 
 .cta {
-  margin: 40px 0;
+  margin: 20px 0;
   text-align: center;
   p {
     line-height: 1.4;
@@ -21,8 +17,7 @@
 }
 
 .cta-content {
-  background: rgba($dark, 0.9);
-  padding: 60px 40px;
+  padding: 20px 0;
 }
 
 .cta-main-header {
@@ -33,15 +28,23 @@
 .saving-list {
   border-top: 1px solid $lite;
   border-bottom: 1px solid $lite;
-  font-size: 1.4em;
-  padding: 10px 0;
-  margin: 10px 0;
+  padding: 20px 20px;
+  margin: 40px 0;
+  text-align: left;
   li {
-    padding: 5px 0;
+    font-size: 1.6em;
+    padding: 12px 0;
+    list-style: disc;
+    text-transform: uppercase;
   }
 }
 
 #download-text {
+  font-size: 1.5em;
   padding: 20px 0;
   text-transform: uppercase;
+}
+
+.download-btn {
+  font-size: 1.5em;
 }

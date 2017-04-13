@@ -1,24 +1,11 @@
 (function() {
   
-  // var leadForm = document.getElementById('imc-form');
-  // var downloadText = document.getElementById('download-text');
+  var downloadHandle = document.getElementById('download-handle');
+  downloadHandle.addEventListener('click', handleDownload);
 
-  // downloadText.style.visibility = "hidden";
-
-  // leadForm.addEventListener('submit', handleFormSubmit);
-
-  // function handleFormSubmit(evt) {
-  //  evt.preventDefault();
-
-  //  var firstName = document.getElementById('firstName').value;
-  //  var lastName = document.getElementById('lastName').value;
-  //  var leadEmail = document.getElementById('leadEmail').value;
-
-  //  setTimeout(function() {
-  //    leadForm.style.visibility = "hidden";
-  //    downloadText.style.visibility = "visible";
-  //  }, 1500);
-
-  // };
+  function handleDownload(evt) {
+    downloadHandle.style.visibility = "hidden";
+    alert('Thank You');
+  }
 
 })();

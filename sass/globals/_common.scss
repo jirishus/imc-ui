@@ -12,6 +12,11 @@ body {
  font-family: $body-font;
 }
 
+main {
+ background: rgba($dark, 0.8);
+ padding: 90px 0;
+}
+
 a {
  &:hover {
   cursor: pointer;
@@ -29,4 +34,3 @@ a {
 .center {
   text-align: center;
 }
-

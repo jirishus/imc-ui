@@ -6,6 +6,9 @@
 
 .imc-logo {
  color: $lite;
+ &:hover {
+  background: $lite;
+ }
 }
 
 .header-info {
