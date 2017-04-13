@@ -1,9 +1,11 @@
 .imc-hero {
   text-align: center;
   text-transform: uppercase;
+  margin: 50px 0;
   h1 {
     font-size: 3em;
     span {
+      background: $lite;
       color: $lead-color;
     }
   }
@@ -11,6 +13,7 @@
 
 .cta {
   margin: 40px 0;
+  text-align: center;
   p {
     line-height: 1.4;
     margin: 20px 0;
@@ -18,33 +21,27 @@
 }
 
 .cta-content {
-  h2 {
-    text-transform: uppercase;
-    margin: 5px 0;
-  }
-  form {
-    background: $dark;
-    color: #fff;
-    padding: 40px 25px;
-  }
-  .download-btn {
-    background: $lead-color;
-    display: block;
-    margin: 0 auto;
-    width: 80%;
-    &:hover {
-      color: #fff;
-      background: rgba($lead-color, 0.7);
-    }
-  }
+  background: rgba($dark, 0.9);
+  padding: 60px 40px;
 }
 
 .cta-main-header {
-  color: $lead-color;
+  color: $lite;
+  text-transform: uppercase;
 }
 
-.cta-visual {
-  background: url('../images/book.png') no-repeat center center;
-  background-size: cover;
-  height: 503px;
+.saving-list {
+  border-top: 1px solid $lite;
+  border-bottom: 1px solid $lite;
+  font-size: 1.4em;
+  padding: 10px 0;
+  margin: 10px 0;
+  li {
+    padding: 5px 0;
+  }
+}
+
+#download-text {
+  padding: 20px 0;
+  text-transform: uppercase;
 }

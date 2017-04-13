@@ -6,6 +6,9 @@ h5 { font-size: .83em; }
 h6 { font-size: .75em; }
 
 body {
+ background: url('../images/money.jpg') no-repeat center center fixed;
+ background-size: cover;
+ color: #fff;
  font-family: $body-font;
 }
 
@@ -26,3 +29,4 @@ a {
 .center {
   text-align: center;
 }
+
