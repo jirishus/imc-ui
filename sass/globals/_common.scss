@@ -6,28 +6,15 @@ h5 { font-size: .83em; }
 h6 { font-size: .75em; }
 
 body {
- background: url('../images/money.jpg') no-repeat center center fixed;
+ background: url('../images/money.jpg') no-repeat center center;
  background-size: cover;
  color: #fff;
  font-family: $body-font;
+ height: 1000px;
 }
 
-main {
- padding: 90px 0;
-}
-
-a {
- &:hover {
-  cursor: pointer;
-  text-decoration: none;
- }
-}
-
-.active {
-  display: block;
-}
-.inactive {
-  display: none;
+input {
+ color: $dark;
 }
 
 .center {
