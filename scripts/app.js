@@ -2,26 +2,43 @@
   
   var leadForm = document.getElementById('leadForm');
   var downloadBtn = document.getElementById('download-btn');
+  var downloadText = document.getElementById('download-text');
+  var thankyou = document.getElementById('thankyou');
   
-  downloadBtn.style.visibility = 'hidden';
+  // downloadBtn.style.visibility = 'hidden';
+  // thankyou.style.visibility = 'hidden';
  
-  leadForm.addEventListener('submit', function(evt) {
-    var emailInput = document.getElementById('emailInput').value;
-
+  leadForm.addEventListener('submit', handleLeadForm);
+  downloadBtn.addEventListener('click', handleDownload);
+    
+  // event handlers
+  function handleLeadForm(evt) {
+    // fail-fast
     evt.preventDefault();
-    
-    // Show Download Button
-    // leadForm.style.display = 'none';
-    // downloadBtn.style.visibility = 'visible';
+    // user input
+    var emailInput = document.getElementById('emailInput').value;
+    var emailRegex = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/i;
+    var emailRegexTest = emailRegex.test(emailInput);
 
-    var emailRegex = /.com/i;
+    if(emailRegexTest) {
+      // Show Download Button
+      toggleDownloadBtn();
+    } else {
+      alert('please enter corrent email format');
+    }
 
-    // console.log(emailRegex.test(emailInput));
-    
-  });
+  }
 
-  downloadBtn.addEventListener('click', function(evt) {
-    alert('processing download');
-  });
+  function handleDownload(evt) {
+    downloadBtn.style.visibility = 'hidden';
+    downloadText.style.visibility = 'hidden';
+    thankyou.style.visibility = 'visible';
+  }
+
+  // helpers
+  function toggleDownloadBtn() {
+    leadForm.style.display = 'none';
+    downloadBtn.style.visibility = 'visible';    
+  }
 
 })();

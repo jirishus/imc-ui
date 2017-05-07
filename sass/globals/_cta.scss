@@ -45,7 +45,12 @@
 }
 
 .download-btn {
+  visibility: hidden;
   font-size: 1.5em;
+}
+
+#thankyou {
+  visibility: hidden;
 }
 
 .emailInput {
