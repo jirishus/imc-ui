@@ -4,16 +4,30 @@
   var downloadBtn = document.getElementById('download-btn');
   var downloadText = document.getElementById('download-text');
   var thankyou = document.getElementById('thankyou');
-  var userEmail;
+  var userVisitDiv = document.getElementById('userVisit');
+  var userVisits = localStorage.getItem('userVisits');
 
+  function processVisits() {
+    if (userVisits === null) {
+      userVisits = 0;
+    }
+    userVisits++;
+    localStorage.setItem('userVisits', userVisits);
+    userVisitDiv.innerHTML = 'Current Visits : ' + userVisits;
+  }
+
+  // Show Visit Count
+  processVisits();
+
+  // Register Event Listeners
   leadForm.addEventListener('submit', handleLeadForm);
   downloadBtn.addEventListener('click', handleDownload);
   
-  // event handlers
+  // Register Event Handlers
   function handleLeadForm(evt) {
-    // fail-fast
+
     evt.preventDefault();
-    // user input
+    
     var emailInput = document.getElementById('emailInput').value;
     var emailRegex = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/i;
     var emailRegexTest = emailRegex.test(emailInput);
@@ -42,12 +56,10 @@
 
   function insertRecord(record) {
     var emails = [];
-
     // emails.push(record);
     // localStorage.emails = JSON.stringify(emails);
     // var userEmail = JSON.parse(localStorage.emails);
     // localStorage.setItem('userEmail', record);
-
   }
 
 })();
