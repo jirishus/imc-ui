@@ -4,13 +4,11 @@
   var downloadBtn = document.getElementById('download-btn');
   var downloadText = document.getElementById('download-text');
   var thankyou = document.getElementById('thankyou');
-  
-  // downloadBtn.style.visibility = 'hidden';
-  // thankyou.style.visibility = 'hidden';
- 
+  var userEmail;
+
   leadForm.addEventListener('submit', handleLeadForm);
   downloadBtn.addEventListener('click', handleDownload);
-    
+  
   // event handlers
   function handleLeadForm(evt) {
     // fail-fast
@@ -21,8 +19,9 @@
     var emailRegexTest = emailRegex.test(emailInput);
 
     if(emailRegexTest) {
-      // Show Download Button
       toggleDownloadBtn();
+      insertRecord(emailInput);
+
     } else {
       alert('please enter corrent email format');
     }
@@ -39,6 +38,16 @@
   function toggleDownloadBtn() {
     leadForm.style.display = 'none';
     downloadBtn.style.visibility = 'visible';    
+  }
+
+  function insertRecord(record) {
+    var emails = [];
+
+    // emails.push(record);
+    // localStorage.emails = JSON.stringify(emails);
+    // var userEmail = JSON.parse(localStorage.emails);
+    // localStorage.setItem('userEmail', record);
+
   }
 
 })();
